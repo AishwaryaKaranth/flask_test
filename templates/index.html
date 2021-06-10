@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Galaxy Classification using CNN</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+</head>
+<style>
+	label input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+label{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 47px;
+  color: white;
+  font-weight: bold;
+  font-size: 46px;
+  padding-left:0.7rem;
+}
+label:hover{
+  background: #8360c3;
+  color: white;
+}
+</style>
+<body style="background: #8360c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+	<div>
+	<h3 style="text-align: center; color: white; font-family: 'Krona One', sans-serif; font-size: 30px;margin-top:4rem; padding-right:1rem; padding-left:1rem;">
+		Morphological Taxonomy of Galaxies using Convolutional Neural Networks
+	</h3>
+	<p style="color: white; font-family: 'Krona One', sans-serif; text-align:center;">
+	Upload an image of a galaxy here
+	</p>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <label>
+      <input style=" position: absolute; opacity: 0; top: 1rem; left: 0;" id="input" type="file" name="file" accept="image/*" multiple/></label>
+
+      <span style="color:white;">+</span>
+       
+     </label>
+
+    <input style=" position: absolute; opacity: 0; top: 1rem; left: 0;" id="input" type="file" name="file" accept="image/*" multiple/></label>
+    <input style="margin-top: 2rem;border: 3px solid white;/* margin: 8% 0 0 49%; *//* margin: auto; *//* background-image: linear-gradient(to right,#F59E0B,#f26405,red,#140b05); */color: white;padding: 1rem;border-radius: 1.5rem;background: inherit;/* border: white; */font-size: 1.5rem;font-family: 'Krona One';margin: left:50%;margin-left: 45%;margin: top: ;position: absolute;" type="submit" value="Predict">
+    <span style="color:white;">+</span>
+      </label>
+     
+
+  </form>
+</div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
